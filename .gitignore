@@ -1,9 +1,5 @@
-backend/venv/
-backend/__pycache__/        
-backend/database.db   
-*.db
-*.sqlite3
 .env 
 venv/
 __pycache__/
+backend/database.db   
 frontend/node_modules/ 
