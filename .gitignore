@@ -1,7 +1,5 @@
-
-backend/venv/
-backend/database.db   <-- importante para no subir la db
-backend/__pycache__/
-backend/.env          <-- claves
-frontend/node_modules/ <-- modulos del frontend
-.DS_Store
+.env 
+venv/
+__pycache__/
+backend/database.db   
+frontend/node_modules/ 
