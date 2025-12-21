@@ -1,7 +1,11 @@
 import sqlite3
 from datetime import date,datetime
 import re
-DB_NAME="database.db"
+import os
+
+# para que la base de datos siempre se cree en /backend
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DB_NAME= os.path.join(BASE_DIR, "database.db")
 #variable de la db
 
 def conexion_db():

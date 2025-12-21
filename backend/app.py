@@ -8,10 +8,12 @@ from datetime import date
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from src.scrapers.mercadolibre import obtener_producto
-from src.core.db import guardar_producto
+from src.core.db import guardar_producto, iniciar_db
 
 app = Flask(__name__)
 CORS(app) # evita errores por tener puertos diferentes
+
+iniciar_db()
 
 @app.route('/api/track', methods=['POST'])
 def track_product():
