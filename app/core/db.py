@@ -3,8 +3,8 @@ from datetime import date,datetime
 import re
 import os
 
-# para que la base de datos siempre se cree en /backend
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# para que la base de datos siempre se cree en /app
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_NAME= os.path.join(BASE_DIR, "database.db")
 #variable de la db
 
